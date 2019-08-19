@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		624F65B5230958C5006FABFA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F65B4230958C5006FABFA /* main.swift */; };
+		624F65CC23095C4F006FABFA /* SoundexClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F65CB23095C4F006FABFA /* SoundexClass.swift */; };
+		624F65CE23095F8B006FABFA /* SoundexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F65CD23095F8B006FABFA /* SoundexTests.swift */; };
+		624F65CF230961FF006FABFA /* SoundexClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624F65CB23095C4F006FABFA /* SoundexClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +26,21 @@
 
 /* Begin PBXFileReference section */
 		624F65B1230958C5006FABFA /* Soundex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Soundex; sourceTree = BUILT_PRODUCTS_DIR; };
-		624F65B4230958C5006FABFA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		624F65C323095AED006FABFA /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		624F65C723095AED006FABFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624F65CB23095C4F006FABFA /* SoundexClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundexClass.swift; sourceTree = "<group>"; };
+		624F65CD23095F8B006FABFA /* SoundexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundexTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		624F65AE230958C5006FABFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624F65C023095AED006FABFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				624F65B3230958C5006FABFA /* Soundex */,
+				624F65C423095AED006FABFA /* Test */,
 				624F65B2230958C5006FABFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				624F65B1230958C5006FABFA /* Soundex */,
+				624F65C323095AED006FABFA /* Test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +71,18 @@
 		624F65B3230958C5006FABFA /* Soundex */ = {
 			isa = PBXGroup;
 			children = (
-				624F65B4230958C5006FABFA /* main.swift */,
+				624F65CB23095C4F006FABFA /* SoundexClass.swift */,
 			);
 			path = Soundex;
+			sourceTree = "<group>";
+		};
+		624F65C423095AED006FABFA /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				624F65CD23095F8B006FABFA /* SoundexTests.swift */,
+				624F65C723095AED006FABFA /* Info.plist */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +105,23 @@
 			productReference = 624F65B1230958C5006FABFA /* Soundex */;
 			productType = "com.apple.product-type.tool";
 		};
+		624F65C223095AED006FABFA /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624F65C823095AED006FABFA /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				624F65BF23095AED006FABFA /* Sources */,
+				624F65C023095AED006FABFA /* Frameworks */,
+				624F65C123095AED006FABFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			productName = Test;
+			productReference = 624F65C323095AED006FABFA /* Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +133,9 @@
 				ORGANIZATIONNAME = "Queralt Sosa Mompel";
 				TargetAttributes = {
 					624F65B0230958C5006FABFA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					624F65C223095AED006FABFA = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -110,16 +153,36 @@
 			projectRoot = "";
 			targets = (
 				624F65B0230958C5006FABFA /* Soundex */,
+				624F65C223095AED006FABFA /* Test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		624F65C123095AED006FABFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		624F65AD230958C5006FABFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624F65B5230958C5006FABFA /* main.swift in Sources */,
+				624F65CC23095C4F006FABFA /* SoundexClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624F65BF23095AED006FABFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624F65CE23095F8B006FABFA /* SoundexTests.swift in Sources */,
+				624F65CF230961FF006FABFA /* SoundexClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +324,42 @@
 			};
 			name = Release;
 		};
+		624F65C923095AED006FABFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RBE9527MBH;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = programmingchallenge131.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		624F65CA23095AED006FABFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RBE9527MBH;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = programmingchallenge131.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -278,6 +377,15 @@
 			buildConfigurations = (
 				624F65B9230958C5006FABFA /* Debug */,
 				624F65BA230958C5006FABFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624F65C823095AED006FABFA /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624F65C923095AED006FABFA /* Debug */,
+				624F65CA23095AED006FABFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
